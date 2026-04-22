@@ -27,7 +27,7 @@ int main()
     int choice, id;
     string name;
 
-    while(true){
+    while(choice){
         cout<<"1. Add Student"<< endl;
         cout<<"2. Display All Student"<< endl;
         cout<<"3. Remove Student by ID"<< endl;
@@ -35,7 +35,7 @@ int main()
         cout<<"0. Exit"<< endl;
         cout<<"Enter Your Choice:" ;
         cin>> choice;
-    }
+    
 
     switch(choice){
 
@@ -83,7 +83,7 @@ int main()
             }
 
             case 4: {
-                cout << "Enter ID to search student: ";
+                cout << "Enter the ID to search student: ";
                 cin >> id;
 
                 int found = 0;
@@ -104,6 +104,8 @@ int main()
 
             default:
                 cout << "Invalid Choice" << endl;
+
+        }
         }
         return 0;
     }
